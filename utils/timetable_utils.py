@@ -151,8 +151,8 @@ def get_faculty_schedule(
 
     cols = [
         "Day", "DayOrder", "StartTime", "EndTime", "DurationMinutes",
-        "CourseName", "CourseCode", "Section", "Department",
-        "Semester", "Room", "ClassType", "EnrolledStudents", "Faculty", "FacultyID",
+        "CourseName", "CourseCode", "Section",
+        "Room", "ClassType", "Faculty",
     ]
     return (
         tt.loc[mask, cols]
@@ -182,8 +182,8 @@ def get_daily_schedule(day: str) -> pd.DataFrame:
     tt = load_timetable()
     mask = tt["Day"].str.upper() == day.upper()
     cols = [
-        "StartTime", "EndTime", "Faculty", "Department",
-        "CourseName", "CourseCode", "Section", "Room", "ClassType",
+        "StartTime", "EndTime", "Faculty",
+        "CourseName", "Section", "Room", "Department",
     ]
     return (
         tt.loc[mask, cols]
@@ -221,7 +221,7 @@ def get_room_schedule(room: str, day: Optional[str] = None) -> pd.DataFrame:
 
     cols = [
         "Day", "DayOrder", "StartTime", "EndTime",
-        "Faculty", "CourseName", "Section", "ClassType", "EnrolledStudents",
+        "Faculty", "CourseName", "Section",
     ]
     return (
         tt.loc[mask, cols]
@@ -264,7 +264,7 @@ def get_section_schedule(
     )
     cols = [
         "Day", "DayOrder", "StartTime", "EndTime",
-        "CourseName", "CourseCode", "Faculty", "Room", "ClassType",
+        "CourseName", "Faculty", "Room",
     ]
     return (
         tt.loc[mask, cols]

@@ -54,57 +54,45 @@ logger = logging.getLogger(__name__)
 #   {agent_scratchpad} — the Thought/Action/Observation chain
 #   {chat_history}    — injected by ConversationBufferWindowMemory
 
-SYSTEM_PROMPT = """
-You are FacultyBot, an AI assistant for faculty workload, timetable management, scheduling conflicts, and policy compliance.
+SYSTEM_PROMPT = """You are FacultyBot, an academic scheduling assistant for University of Calcutta.
 
-Available tools:
+TOOLS:
 {tools}
 
-Tool names:
-{tool_names}
+Tool names: {tool_names}
 
-Tool Selection:
-- Use structured tools whenever a faculty, department, room, section, or time is explicitly mentioned.
-- Use policy_rag_tool, workload_rag_tool, timetable_rag_tool, or multi_source_rag_tool only for semantic, policy, vague, or cross-source questions.
-- For compliance checks, always use check_policy_compliance_tool.
-- Chain tools only when necessary.
+RULES:
+- Greetings / general knowledge / thanks → answer directly, NO tools.
+- Named faculty or ID → get_faculty_workload_tool or get_faculty_schedule_tool
+- Department mentioned → get_department_workload_report_tool
+- Day + time → get_free_faculty_at_tool
+- Room mentioned → get_room_schedule_tool
+- Clashes / conflicts → detect_faculty_clashes_tool or detect_room_clashes_tool
+- Compliance / policy + faculty → check_policy_compliance_tool
+- Report requested → get_faculty_workload_report_tool or get_department_workload_report_tool
+- Vague / cross-cutting → multi_source_rag_tool
+- Policy rule question → policy_rag_tool
+- Never fabricate data. Never call the same tool twice with the same input.
+- If a tool errors, report it. If data is missing, say so.
+- Ask for clarification only when a name matches multiple people.
+- Responses: concise and professional; if a tool returns a table, reproduce it exactly in your Final Answer — never summarise tabular data into prose; use code blocks for preformatted reports.
 
-Rules:
-- Never fabricate tool outputs.
-- Never guess schedules, workloads, rooms, or policy limits.
-- Never call the same tool twice with identical input.
-- Ask for clarification if multiple faculty match.
-- Report tool errors honestly.
-- If no data exists, say so.
-- For greetings, answer directly without tools.
+FORMAT — no tool needed:
+Thought: No tool needed.
+Final Answer: <answer>
 
-Format:
-
-Thought: reasoning
-Action: tool_name
-Action Input: input
-Observation: tool result
-
-(repeat as needed)
-
+FORMAT — tool needed:
+Thought: <reasoning>
+Action: <tool_name>
+Action Input: <input>
+Observation: <result>
+...repeat as needed...
 Thought: I have enough information.
-Final Answer: response
+Final Answer: <answer>
 
-Answer Style:
-- Use concise professional responses.
-- Use tables for lists when appropriate.
-- Preserve tool-generated reports inside code blocks.
-- Prefix conflict reports with ✓ or ⚠.
-- Cite policy rules when discussing compliance.
-
-Chat History:
-{chat_history}
-
-Question:
-{input}
-
-{agent_scratchpad}
-"""
+Chat History: {chat_history}
+Question: {input}
+{agent_scratchpad}"""
 
 # ---------------------------------------------------------------------------
 # Memory (module-level so reset_memory() can clear it)
@@ -117,13 +105,13 @@ def _get_memory() -> ConversationBufferWindowMemory:
     """
     Return (or lazily create) the conversation memory buffer.
 
-    Keeps the last 6 human/AI turns (~12 messages) — enough context for
+    Keeps the last 3 human/AI turns (~6 messages) — enough context for
     follow-up questions without overflowing Groq's 8 k-token context.
     """
     global _memory
     if _memory is None:
         _memory = ConversationBufferWindowMemory(
-            k=6,
+            k=3,
             memory_key="chat_history",
             input_key="input",
             output_key="output",
@@ -181,7 +169,13 @@ def _build_agent_executor() -> AgentExecutor:
         tools=ALL_TOOLS,
         memory=_get_memory(),
         verbose=True,               # logs Thought/Action/Observation to stdout
-        handle_parsing_errors="Please respond with a Final Answer directly if no tool is needed.", # gracefully recover from malformed LLM output
+        handle_parsing_errors=(
+            "Your last response could not be parsed. "
+            "If no tool is needed, respond ONLY with:\n"
+            "Thought: This question does not require any tools. I can answer directly.\n"
+            "Final Answer: <your answer>\n"
+            "Do not add anything else before 'Thought:'."
+        ),
         max_iterations=5,          # prevent infinite tool-calling loops
         max_execution_time=120,     # 2-minute hard timeout per query
         return_intermediate_steps=True,
