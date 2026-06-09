@@ -1,0 +1,178 @@
+UNIVERSITY FACULTY WORKLOAD & TIMETABLE POLICIES
+=================================================
+Institution: University of Calcutta
+Academic Year: 2026-2027
+Document Version: 3.1
+Last Updated: Mar 2026
+Approved By: Academic Council
+
+---
+
+SECTION 1: FACULTY WORKLOAD POLICIES
+--------------------------------------
+
+1.1 Maximum Weekly Teaching Load
+- Maximum teaching hours per week for a Professor: 12 hours.
+- Maximum teaching hours per week for an Associate Professor: 14 hours.
+- Maximum teaching hours per week for an Assistant Professor: 16 hours.
+- These limits include all lecture, tutorial, and laboratory sessions.
+- Research and administrative duties are counted separately and do not reduce teaching load limits.
+
+1.2 Minimum Weekly Teaching Load
+- A full-time Professor must teach a minimum of 4 hours per week.
+- A full-time Associate Professor must teach a minimum of 6 hours per week.
+- A full-time Assistant Professor must teach a minimum of 8 hours per week.
+- Faculty on sabbatical or medical leave are exempt from minimum load requirements.
+
+1.3 Research Load
+- Professors are expected to dedicate 4–6 hours per week to research activities.
+- Associate Professors are expected to dedicate 2–4 hours per week to research activities.
+- Assistant Professors are expected to dedicate 1–2 hours per week to research activities.
+- Research load hours are tracked separately and do not count toward teaching hours.
+
+1.4 Administrative Load
+- HODs (Heads of Department) are allocated 2 administrative hours per week.
+- Faculty serving on Senate, Academic Council, or major committees are allocated 1 additional administrative hour per week.
+- Administrative load reduces maximum teaching availability by the same number of hours.
+
+1.5 Overload Policy
+- Faculty may be assigned overload only with written approval from the HOD and Dean.
+- Overload teaching (beyond the maximum) must not exceed 4 additional hours per week.
+- Overloaded faculty are entitled to additional remuneration as per the approved pay scale.
+- Overload assignments must not persist for more than two consecutive semesters.
+
+1.6 Guest / Visiting Faculty
+- Visiting faculty must not be assigned more than 10 hours per week.
+- Visiting faculty are not eligible for research or administrative load assignments.
+
+---
+
+SECTION 2: TIMETABLE SCHEDULING POLICIES
+------------------------------------------
+
+2.1 Consecutive Teaching Hours
+- No faculty member shall have more than 3 consecutive teaching hours without a break.
+- A minimum break of 1 hour (free slot) is mandatory between two consecutive teaching sessions exceeding 2 hours.
+- Lab sessions of 2 hours are treated as a single block and count as 2 consecutive hours.
+
+2.2 Daily Teaching Limits
+- Maximum teaching hours in a single day for any faculty: 5 hours.
+- Faculty should not be scheduled for sessions before 08:00 AM or after 06:00 PM.
+- At least one day per week must have no teaching assignment (faculty rest day).
+
+2.3 Free Slot Requirements
+- All faculty must have at least one completely free slot (1 hour) between any two sessions on the same day.
+- No faculty should be scheduled in the last slot (16:00–17:00) more than 3 days per week.
+- Friday afternoon (after 15:00) sessions should be minimized and only used when no other option exists.
+
+2.4 Room and Resource Allocation
+- A single room cannot be assigned to two different sessions at the same time.
+- Lab sessions require dedicated lab rooms (Lab 101–Lab 502); regular classrooms cannot be used for labs.
+- Room capacity must not be exceeded; enrollment above 90% of capacity requires room reassignment.
+- Smart/seminar rooms (capacity > 80) are to be used only for seminars, workshops, or merged sections.
+
+2.5 Lunch Break Policy
+- No sessions shall be scheduled between 13:00 and 14:00 (designated lunch break).
+- This slot is reserved for faculty meetings, student consultation, and departmental activities.
+
+2.6 Session Clash Policy
+- A faculty member cannot be assigned to two sessions at the same time slot.
+- A student section (e.g., CSE Sem 3 Section A) cannot have two courses scheduled at the same time.
+- In case of detected clashes, the timetable must be revised within 48 hours of identification.
+
+---
+
+SECTION 3: DEPARTMENT-SPECIFIC RULES
+---------------------------------------
+
+3.1 Computer Science & Engineering (CSE)
+- All CSE lab sessions must be conducted in designated CS labs (Lab 101–Lab 209).
+- Programming-based courses (CS201, CS302, CS304) must have one lab session per week in addition to lectures.
+- Final-year project (CS499) faculty guides are not counted in regular teaching load.
+- Maximum number of courses a CSE faculty can handle simultaneously: 3 courses.
+
+3.2 Electrical & Electronics Engineering (EEE)
+- High-voltage lab sessions (EE201, EE303) require a co-supervisor in addition to the faculty-in-charge.
+- EEE lab sessions must not be scheduled after 16:00 due to safety regulations.
+- Faculty teaching power systems courses must hold a valid electrical safety certification.
+
+3.3 Mechanical Engineering (ME)
+- Workshop and manufacturing lab sessions (ME303, ME302) require mandatory safety induction before first session.
+- Heavy machinery labs must always have a lab technician present alongside the faculty.
+- ME faculty must submit lab session risk assessments at the start of each semester.
+
+3.4 Civil Engineering (CIVIL)
+- Field survey sessions (CE101) count as 2 hours regardless of actual duration for load calculation purposes.
+- Site visit sessions must be pre-approved by the HOD at least 1 week in advance.
+- CE faculty conducting site visits are exempt from campus sessions on the same day.
+
+---
+
+SECTION 4: SUBSTITUTION AND LEAVE POLICIES
+--------------------------------------------
+
+4.1 Planned Leave
+- Faculty planning leave must notify the HOD at least 5 working days in advance.
+- For leaves longer than 3 days, a substitute faculty must be arranged by the concerned department.
+- Substitute faculty must be from the same department and must have relevant subject expertise.
+
+4.2 Emergency Leave
+- In case of emergency leave, the HOD must be informed within 2 hours of the missed session.
+- The department is responsible for arranging a substitute within 24 hours.
+- Students must be notified via the official LMS (Learning Management System) about any session cancellation.
+
+4.3 Substitution Limits
+- A faculty member shall not be assigned substitution duties that raise their total load beyond the overload threshold.
+- Substitution for more than 3 sessions per semester requires approval from the Dean of Academics.
+
+---
+
+SECTION 5: EXAMINATION AND EVALUATION DUTIES
+----------------------------------------------
+
+5.1 Invigilation Duties
+- Every faculty member is expected to perform a minimum of 4 invigilation duties per semester.
+- HODs and faculty with administrative loads above 2 hours/week are exempt from invigilation duties.
+- Faculty on medical leave or maternity/paternity leave are exempt during the leave period.
+
+5.2 Paper Setting and Evaluation
+- Course-handling faculty are responsible for setting end-semester examination papers.
+- Paper moderation must be completed at least 2 weeks before the examination date.
+- Answer script evaluation must be completed within 10 working days of the examination.
+
+---
+
+SECTION 6: WORKLOAD REPORTING
+-------------------------------
+
+6.1 Semester Reports
+- All faculty must submit a workload self-declaration form at the beginning of each semester.
+- HODs must submit consolidated department workload reports to the Dean by the 3rd week of each semester.
+- Discrepancies between declared and actual workload must be resolved within 1 week of identification.
+
+6.2 Annual Review
+- Faculty workload compliance is reviewed annually by the Academic Council.
+- Persistent overload or underload situations are flagged for corrective action.
+- The timetable committee must ensure equitable distribution of workload across departments.
+
+6.3 Workload Audit
+- An independent workload audit is conducted once per academic year.
+- Faculty with consistently high or low loads are reviewed for structural reallocation.
+- Audit findings are shared with the Academic Senate for policy revisions.
+
+---
+
+SECTION 7: DEFINITIONS
+------------------------
+
+- Teaching Hour: One scheduled 60-minute session of lecture, tutorial, or laboratory instruction.
+- Free Slot: A 60-minute period with no scheduled teaching or examination duty.
+- Consecutive Hours: Teaching sessions scheduled back-to-back with no free slot in between.
+- Overload: Teaching load exceeding the maximum prescribed for a given designation.
+- Session Clash: Two sessions assigned to the same faculty, room, or student section at the same time.
+- Research Load: Time formally allocated for research, publication, and project supervision.
+- Administrative Load: Time allocated for departmental or institutional administrative responsibilities.
+
+---
+
+END OF DOCUMENT

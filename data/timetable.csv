@@ -1,0 +1,101 @@
+SlotID,Day,StartTime,EndTime,CourseCode,CourseName,FacultyID,Faculty,Department,Semester,Section,Room,RoomCapacity,ClassType,EnrolledStudents,Status
+TT001,Monday,08:00,09:00,CS201,Data Structures,F101,Prof. Sharma,CSE,3,A,Room 201,60,Lecture,55,Scheduled
+TT002,Monday,09:00,10:00,CS401,Artificial Intelligence & ML,F102,Prof. Mehta,CSE,7,A,Room 202,60,Lecture,52,Scheduled
+TT003,Monday,09:00,10:00,EE201,Circuits & Networks,F103,Prof. Rao,EEE,3,A,Room 305,60,Lecture,58,Scheduled
+TT004,Monday,09:00,10:00,ME301,Fluid Mechanics,F104,Prof. Iyer,ME,5,A,Room 401,60,Lecture,50,Scheduled
+TT005,Monday,10:00,11:00,CS301,Operating Systems,F105,Prof. Nair,CSE,5,A,Room 203,60,Lecture,57,Scheduled
+TT006,Monday,10:00,11:00,CS402,Computer Networks,F106,Prof. Joshi,CSE,7,B,Room 204,60,Lecture,48,Scheduled
+TT007,Monday,10:00,11:00,EE101,Digital Electronics,F107,Prof. Pillai,EEE,3,A,Room 306,60,Lecture,55,Scheduled
+TT008,Monday,11:00,12:00,ME201,Thermodynamics,F108,Prof. Verma,ME,3,A,Room 402,60,Lecture,60,Scheduled
+TT009,Monday,11:00,12:00,CE301,Structural Analysis,F109,Prof. Kumar,CIVIL,5,A,Room 501,60,Lecture,45,Scheduled
+TT010,Monday,11:00,12:00,CS302,Database Management Systems,F111,Prof. Das,CSE,5,B,Room 205,60,Lecture,54,Scheduled
+TT011,Monday,12:00,13:00,CS201,Data Structures,F101,Prof. Sharma,CSE,3,B,Room 201,60,Lecture,58,Scheduled
+TT012,Monday,14:00,15:00,CS303,Software Engineering,F115,Prof. Gupta,CSE,5,A,Room 206,60,Lecture,56,Scheduled
+TT013,Monday,14:00,15:00,EE301,Power Systems,F112,Prof. Bose,EEE,5,A,Room 307,60,Lecture,50,Scheduled
+TT014,Monday,14:00,15:00,ME302,Machine Design,F113,Prof. Patel,ME,5,B,Room 403,60,Lecture,48,Scheduled
+TT015,Monday,15:00,16:00,CE401,Geotechnical Engineering,F110,Prof. Singh,CIVIL,7,A,Room 502,60,Lecture,40,Scheduled
+TT016,Monday,15:00,16:00,EE401,Control Systems,F116,Prof. Anand,EEE,7,A,Room 308,60,Lecture,52,Scheduled
+TT017,Monday,15:00,16:00,CS404,Cybersecurity,F127,Prof. Yadav,CSE,7,A,Room 209,60,Lecture,47,Scheduled
+TT018,Monday,16:00,17:00,ME303,Manufacturing Processes,F117,Prof. Mishra,ME,5,A,Room 404,60,Lecture,55,Scheduled
+TT019,Monday,16:00,17:00,CE302,Environmental Engineering,F118,Prof. Chauhan,CIVIL,5,B,Room 504,60,Lecture,43,Scheduled
+TT020,Tuesday,08:00,09:00,CS302,Database Management Systems,F111,Prof. Das,CSE,5,A,Room 205,60,Lecture,57,Scheduled
+TT021,Tuesday,08:00,09:00,EE202,Microprocessors & Microcontrollers,F120,Prof. Trivedi,EEE,3,B,Room 309,60,Lecture,53,Scheduled
+TT022,Tuesday,09:00,10:00,CS401,Artificial Intelligence & ML,F102,Prof. Mehta,CSE,7,B,Room 202,60,Lecture,49,Scheduled
+TT023,Tuesday,09:00,10:00,ME301,Fluid Mechanics,F104,Prof. Iyer,ME,5,B,Room 401,60,Lecture,46,Scheduled
+TT024,Tuesday,09:00,11:00,CS201,Data Structures,F101,Prof. Sharma,CSE,3,A,Lab 101,30,Lab,30,Scheduled
+TT025,Tuesday,10:00,11:00,CE301,Structural Analysis,F109,Prof. Kumar,CIVIL,5,B,Room 501,60,Lecture,42,Scheduled
+TT026,Tuesday,10:00,11:00,EE301,Power Systems,F112,Prof. Bose,EEE,5,B,Room 307,60,Lecture,47,Scheduled
+TT027,Tuesday,11:00,12:00,CS303,Software Engineering,F115,Prof. Gupta,CSE,5,B,Room 206,60,Lecture,50,Scheduled
+TT028,Tuesday,11:00,12:00,ME201,Thermodynamics,F108,Prof. Verma,ME,3,B,Room 402,60,Lecture,58,Scheduled
+TT029,Tuesday,14:00,15:00,EE201,Circuits & Networks,F103,Prof. Rao,EEE,3,B,Room 305,60,Lecture,55,Scheduled
+TT030,Tuesday,14:00,15:00,CS304,Web Technologies,F119,Prof. Banerjee,CSE,5,A,Room 207,60,Lecture,59,Scheduled
+TT031,Tuesday,14:00,16:00,EE101,Digital Electronics,F107,Prof. Pillai,EEE,3,A,Lab 301,30,Lab,28,Scheduled
+TT032,Tuesday,14:00,16:00,ME304,Finite Element Analysis,F125,Prof. Tiwari,ME,7,A,Lab 401,30,Lab,25,Scheduled
+TT033,Tuesday,15:00,16:00,CE402,Highway Engineering,F122,Prof. Shetty,CIVIL,7,A,Room 505,60,Lecture,38,Scheduled
+TT034,Tuesday,15:00,16:00,CS402,Computer Networks,F106,Prof. Joshi,CSE,7,A,Room 204,60,Lecture,51,Scheduled
+TT035,Tuesday,16:00,17:00,ME401,Robotics & Automation,F121,Prof. Kapoor,ME,7,A,Room 405,60,Lecture,44,Scheduled
+TT036,Tuesday,16:00,17:00,EE401,Control Systems,F116,Prof. Anand,EEE,7,B,Room 308,60,Lecture,49,Scheduled
+TT037,Wednesday,08:00,09:00,ME301,Fluid Mechanics,F104,Prof. Iyer,ME,5,A,Room 401,60,Lecture,50,Scheduled
+TT038,Wednesday,09:00,10:00,CS201,Data Structures,F101,Prof. Sharma,CSE,3,C,Room 201,60,Lecture,54,Scheduled
+TT039,Wednesday,09:00,10:00,CE303,Concrete Technology,F130,Prof. Naik,CIVIL,5,A,Room 507,60,Lecture,41,Scheduled
+TT040,Wednesday,09:00,11:00,CS401,Artificial Intelligence & ML,F102,Prof. Mehta,CSE,7,A,Lab 201,30,Lab,28,Scheduled
+TT041,Wednesday,10:00,11:00,EE303,Electrical Machines,F128,Prof. Kulkarni,EEE,5,A,Room 311,60,Lecture,54,Scheduled
+TT042,Wednesday,10:00,11:00,ME305,Dynamics of Machinery,F129,Prof. Pandey,ME,5,A,Room 407,60,Lecture,47,Scheduled
+TT043,Wednesday,11:00,12:00,CS403,Compiler Design,F123,Prof. Menon,CSE,7,A,Room 208,60,Lecture,45,Scheduled
+TT044,Wednesday,11:00,12:00,CE401,Geotechnical Engineering,F110,Prof. Singh,CIVIL,7,B,Room 502,60,Lecture,37,Scheduled
+TT045,Wednesday,11:00,12:00,EE302,Signal Processing,F124,Prof. Saxena,EEE,5,A,Room 310,60,Lecture,51,Scheduled
+TT046,Wednesday,14:00,15:00,CS302,Database Management Systems,F111,Prof. Das,CSE,5,C,Room 205,60,Lecture,53,Scheduled
+TT047,Wednesday,14:00,15:00,ME303,Manufacturing Processes,F117,Prof. Mishra,ME,5,B,Room 404,60,Lecture,50,Scheduled
+TT048,Wednesday,14:00,16:00,EE201,Circuits & Networks,F103,Prof. Rao,EEE,3,A,Lab 302,30,Lab,30,Scheduled
+TT049,Wednesday,15:00,16:00,CS304,Web Technologies,F119,Prof. Banerjee,CSE,5,B,Room 207,60,Lecture,56,Scheduled
+TT050,Wednesday,15:00,16:00,CE302,Environmental Engineering,F118,Prof. Chauhan,CIVIL,5,A,Room 504,60,Lecture,44,Scheduled
+TT051,Wednesday,16:00,17:00,EE401,Control Systems,F116,Prof. Anand,EEE,7,C,Room 308,60,Lecture,46,Scheduled
+TT052,Wednesday,16:00,17:00,ME305,Dynamics of Machinery,F129,Prof. Pandey,ME,5,B,Room 407,60,Lecture,43,Scheduled
+TT053,Thursday,08:00,09:00,CS303,Software Engineering,F115,Prof. Gupta,CSE,5,C,Room 206,60,Lecture,52,Scheduled
+TT054,Thursday,08:00,09:00,EE302,Signal Processing,F124,Prof. Saxena,EEE,5,B,Room 310,60,Lecture,48,Scheduled
+TT055,Thursday,09:00,10:00,ME201,Thermodynamics,F108,Prof. Verma,ME,3,C,Room 402,60,Lecture,55,Scheduled
+TT056,Thursday,09:00,11:00,CS301,Operating Systems,F105,Prof. Nair,CSE,5,A,Lab 102,30,Lab,30,Scheduled
+TT057,Thursday,09:00,11:00,EE303,Electrical Machines,F128,Prof. Kulkarni,EEE,5,A,Lab 303,30,Lab,28,Scheduled
+TT058,Thursday,10:00,11:00,CE303,Concrete Technology,F130,Prof. Naik,CIVIL,5,B,Room 507,60,Lecture,39,Scheduled
+TT059,Thursday,10:00,11:00,ME302,Machine Design,F113,Prof. Patel,ME,5,A,Room 403,60,Lecture,51,Scheduled
+TT060,Thursday,11:00,12:00,CS404,Cybersecurity,F127,Prof. Yadav,CSE,7,B,Room 209,60,Lecture,44,Scheduled
+TT061,Thursday,11:00,12:00,EE201,Circuits & Networks,F103,Prof. Rao,EEE,3,C,Room 305,60,Lecture,56,Scheduled
+TT062,Thursday,11:00,12:00,ME401,Robotics & Automation,F121,Prof. Kapoor,ME,7,B,Room 405,60,Lecture,40,Scheduled
+TT063,Thursday,14:00,15:00,CS402,Computer Networks,F106,Prof. Joshi,CSE,7,C,Room 204,60,Lecture,46,Scheduled
+TT064,Thursday,14:00,15:00,CE402,Highway Engineering,F122,Prof. Shetty,CIVIL,7,B,Room 505,60,Lecture,35,Scheduled
+TT065,Thursday,14:00,16:00,CS201,Data Structures,F101,Prof. Sharma,CSE,3,B,Lab 101,30,Lab,29,Scheduled
+TT066,Thursday,14:00,16:00,ME301,Fluid Mechanics,F104,Prof. Iyer,ME,5,A,Lab 402,30,Lab,27,Scheduled
+TT067,Thursday,15:00,16:00,EE101,Digital Electronics,F107,Prof. Pillai,EEE,3,B,Room 306,60,Lecture,52,Scheduled
+TT068,Thursday,15:00,16:00,CE101,Surveying & Geomatics,F126,Prof. Hegde,CIVIL,1,A,Room 506,60,Lecture,62,Scheduled
+TT069,Thursday,16:00,17:00,CS403,Compiler Design,F123,Prof. Menon,CSE,7,B,Room 208,60,Lecture,41,Scheduled
+TT070,Thursday,16:00,17:00,EE302,Signal Processing,F124,Prof. Saxena,EEE,5,C,Room 310,60,Lecture,45,Scheduled
+TT071,Friday,08:00,09:00,CS404,Cybersecurity,F127,Prof. Yadav,CSE,7,C,Room 209,60,Lecture,43,Scheduled
+TT072,Friday,08:00,09:00,ME303,Manufacturing Processes,F117,Prof. Mishra,ME,5,C,Room 404,60,Lecture,48,Scheduled
+TT073,Friday,09:00,10:00,CE303,Concrete Technology,F130,Prof. Naik,CIVIL,5,C,Room 507,60,Lecture,36,Scheduled
+TT074,Friday,09:00,11:00,EE302,Signal Processing,F124,Prof. Saxena,EEE,5,A,Lab 304,30,Lab,27,Scheduled
+TT075,Friday,09:00,11:00,CS302,Database Management Systems,F111,Prof. Das,CSE,5,B,Lab 103,30,Lab,28,Scheduled
+TT076,Friday,10:00,11:00,ME201,Thermodynamics,F108,Prof. Verma,ME,3,D,Room 402,60,Lecture,57,Scheduled
+TT077,Friday,10:00,11:00,CE201,Construction Management,F114,Prof. Reddy,CIVIL,3,A,Room 503,60,Lecture,48,Scheduled
+TT078,Friday,11:00,12:00,CS301,Operating Systems,F105,Prof. Nair,CSE,5,B,Room 203,60,Lecture,55,Scheduled
+TT079,Friday,11:00,12:00,EE303,Electrical Machines,F128,Prof. Kulkarni,EEE,5,B,Room 311,60,Lecture,51,Scheduled
+TT080,Friday,11:00,12:00,ME305,Dynamics of Machinery,F129,Prof. Pandey,ME,5,C,Room 407,60,Lecture,44,Scheduled
+TT081,Friday,14:00,15:00,CS303,Software Engineering,F115,Prof. Gupta,CSE,5,D,Room 206,60,Lecture,47,Scheduled
+TT082,Friday,14:00,15:00,CE402,Highway Engineering,F122,Prof. Shetty,CIVIL,7,C,Room 505,60,Lecture,33,Scheduled
+TT083,Friday,14:00,16:00,ME302,Machine Design,F113,Prof. Patel,ME,5,A,Lab 403,30,Lab,26,Scheduled
+TT084,Friday,14:00,16:00,CS401,Artificial Intelligence & ML,F102,Prof. Mehta,CSE,7,C,Lab 202,30,Lab,27,Scheduled
+TT085,Friday,15:00,16:00,EE401,Control Systems,F116,Prof. Anand,EEE,7,D,Room 308,60,Lecture,44,Scheduled
+TT086,Friday,15:00,16:00,CE101,Surveying & Geomatics,F126,Prof. Hegde,CIVIL,1,B,Room 506,60,Lecture,60,Scheduled
+TT087,Friday,16:00,17:00,ME401,Robotics & Automation,F121,Prof. Kapoor,ME,7,C,Room 405,60,Lecture,38,Scheduled
+TT088,Friday,16:00,17:00,CS403,Compiler Design,F123,Prof. Menon,CSE,7,C,Room 208,60,Lecture,39,Scheduled
+TT089,Saturday,09:00,10:00,CE201,Construction Management,F114,Prof. Reddy,CIVIL,3,B,Room 503,60,Lecture,44,Scheduled
+TT090,Saturday,09:00,10:00,EE202,Microprocessors & Microcontrollers,F120,Prof. Trivedi,EEE,3,A,Room 309,60,Lecture,56,Scheduled
+TT091,Saturday,10:00,11:00,CS404,Cybersecurity,F127,Prof. Yadav,CSE,7,D,Room 209,60,Lecture,40,Scheduled
+TT092,Saturday,10:00,11:00,ME304,Finite Element Analysis,F125,Prof. Tiwari,ME,7,B,Room 406,60,Lecture,30,Scheduled
+TT093,Saturday,10:00,12:00,CE101,Surveying & Geomatics,F126,Prof. Hegde,CIVIL,1,A,Lab 501,25,Lab,24,Scheduled
+TT094,Saturday,11:00,12:00,EE202,Microprocessors & Microcontrollers,F120,Prof. Trivedi,EEE,3,B,Room 309,60,Lecture,51,Scheduled
+TT095,Saturday,11:00,12:00,CE201,Construction Management,F114,Prof. Reddy,CIVIL,3,C,Room 503,60,Lecture,41,Scheduled
+TT096,Saturday,14:00,15:00,ME304,Finite Element Analysis,F125,Prof. Tiwari,ME,7,C,Room 406,60,Lecture,27,Scheduled
+TT097,Saturday,14:00,16:00,CS304,Web Technologies,F119,Prof. Banerjee,CSE,5,C,Lab 104,30,Lab,29,Scheduled
+TT098,Saturday,14:00,16:00,EE202,Microprocessors & Microcontrollers,F120,Prof. Trivedi,EEE,3,A,Lab 305,30,Lab,26,Scheduled
+TT099,Saturday,15:00,16:00,CE303,Concrete Technology,F130,Prof. Naik,CIVIL,5,D,Room 507,60,Lecture,34,Scheduled
+TT100,Saturday,15:00,16:00,ME305,Dynamics of Machinery,F129,Prof. Pandey,ME,5,D,Room 407,60,Lecture,40,Scheduled

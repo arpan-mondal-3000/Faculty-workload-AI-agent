@@ -1,0 +1,31 @@
+FacultyID,Name,Department,Designation,Course,CourseCode,HoursPerWeek,MaxHoursAllowed,RoomPreference,Specialization,YearsOfExperience,IsHOD,ResearchLoad,AdminLoad,TotalLoad,Status
+F101,Prof. Sharma,CSE,Professor,Data Structures,CS201,6,12,Room 201,Algorithms & Data Structures,18,No,2,1,9,Active
+F102,Prof. Mehta,CSE,Associate Professor,Artificial Intelligence & ML,CS401,8,12,Room 202,Machine Learning,12,No,3,0,11,Active
+F103,Prof. Rao,EEE,Professor,Circuits & Networks,EE201,5,12,Room 305,Power Electronics,22,Yes,1,2,8,Active
+F104,Prof. Iyer,ME,Associate Professor,Fluid Mechanics,ME301,7,12,Room 401,Thermal Engineering,15,No,2,0,9,Active
+F105,Prof. Nair,CSE,Assistant Professor,Operating Systems,CS301,6,12,Room 203,Systems Programming,7,No,1,0,7,Active
+F106,Prof. Joshi,CSE,Professor,Computer Networks,CS402,5,12,Room 204,Network Security,20,Yes,2,2,9,Active
+F107,Prof. Pillai,EEE,Assistant Professor,Digital Electronics,EE101,6,12,Room 306,VLSI Design,5,No,1,0,7,Active
+F108,Prof. Verma,ME,Professor,Thermodynamics,ME201,8,12,Room 402,Heat Transfer,25,Yes,1,2,11,Active
+F109,Prof. Kumar,CIVIL,Associate Professor,Structural Analysis,CE301,7,12,Room 501,Structural Engineering,14,No,2,0,9,Active
+F110,Prof. Singh,CIVIL,Professor,Geotechnical Engineering,CE401,6,12,Room 502,Soil Mechanics,19,Yes,1,2,9,Active
+F111,Prof. Das,CSE,Assistant Professor,Database Management Systems,CS302,5,12,Room 205,Big Data & Cloud,4,No,1,0,6,Active
+F112,Prof. Bose,EEE,Associate Professor,Power Systems,EE301,7,12,Room 307,Renewable Energy,11,No,2,0,9,Active
+F113,Prof. Patel,ME,Assistant Professor,Machine Design,ME302,6,12,Room 403,CAD/CAM,6,No,1,0,7,Active
+F114,Prof. Reddy,CIVIL,Assistant Professor,Construction Management,CE201,5,12,Room 503,Project Management,3,No,0,0,5,Active
+F115,Prof. Gupta,CSE,Associate Professor,Software Engineering,CS303,6,12,Room 206,Agile & DevOps,10,No,2,1,9,Active
+F116,Prof. Anand,EEE,Professor,Control Systems,EE401,8,12,Room 308,Robotics & Automation,17,No,3,1,12,Active
+F117,Prof. Mishra,ME,Associate Professor,Manufacturing Processes,ME303,7,12,Room 404,Industrial Engineering,13,No,2,0,9,Active
+F118,Prof. Chauhan,CIVIL,Associate Professor,Environmental Engineering,CE302,6,12,Room 504,Water Resources,9,No,1,1,8,Active
+F119,Prof. Banerjee,CSE,Assistant Professor,Web Technologies,CS304,4,12,Room 207,Full Stack Development,2,No,0,0,4,Active
+F120,Prof. Trivedi,EEE,Assistant Professor,Microprocessors & Microcontrollers,EE202,5,12,Room 309,Embedded Systems,4,No,1,0,6,Active
+F121,Prof. Kapoor,ME,Professor,Robotics & Automation,ME401,6,12,Room 405,Mechatronics,21,No,3,1,10,Active
+F122,Prof. Shetty,CIVIL,Professor,Highway Engineering,CE402,7,12,Room 505,Transportation Engineering,16,No,2,2,11,Active
+F123,Prof. Menon,CSE,Associate Professor,Compiler Design,CS403,5,12,Room 208,Programming Languages,8,No,2,0,7,Active
+F124,Prof. Saxena,EEE,Associate Professor,Signal Processing,EE302,6,12,Room 310,Communication Systems,11,No,2,0,8,Active
+F125,Prof. Tiwari,ME,Assistant Professor,Finite Element Analysis,ME304,4,12,Room 406,Computational Mechanics,3,No,1,0,5,Active
+F126,Prof. Hegde,CIVIL,Assistant Professor,Surveying & Geomatics,CE101,5,12,Room 506,Remote Sensing,5,No,0,0,5,Active
+F127,Prof. Yadav,CSE,Professor,Cybersecurity,CS404,7,12,Room 209,Network Security & Cryptography,23,No,3,1,11,Active
+F128,Prof. Kulkarni,EEE,Professor,Electrical Machines,EE303,8,12,Room 311,Motor Drives,20,Yes,2,2,12,Active
+F129,Prof. Pandey,ME,Associate Professor,Dynamics of Machinery,ME305,6,12,Room 407,Vibrations & Acoustics,12,No,2,0,8,Active
+F130,Prof. Naik,CIVIL,Associate Professor,Concrete Technology,CE303,6,12,Room 507,Advanced Concrete,10,No,1,1,8,Active
