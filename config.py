@@ -1,20 +1,3 @@
-"""
-config.py
----------
-Centralised configuration for the Faculty Timetable Agent.
-
-All values are read from environment variables (via a .env file loaded by
-python-dotenv) with sensible defaults so the project runs out of the box for
-development.
-
-Usage
------
-    from config import settings
-
-    print(settings.GROQ_API_KEY)
-    print(settings.TIMETABLE_PATH)
-"""
-
 from __future__ import annotations
 
 import os
@@ -61,9 +44,6 @@ LOG_LEVEL = os.getenv("LOG_LEVEL", "INFO")
 
 
 # ── Settings proxy object ─────────────────────────────────────────────────────
-# All other modules do `from config import settings` and access settings.X
-# This avoids scattering `import config; config.GROQ_API_KEY` everywhere.
-
 class _Settings:
     """Lightweight namespace that exposes every config value as an attribute."""
 

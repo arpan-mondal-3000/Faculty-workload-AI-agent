@@ -1,31 +1,3 @@
-"""
-agent/agent.py
---------------
-Agent assembly for the Faculty Timetable Agent.
-
-Architecture
-------------
-Pattern  : ReAct (Reasoning + Acting) via LangChain's ``create_react_agent``
-LLM      : llama-3.1-8b-instant on Groq  (fast, low-latency)
-Tools    : 24 tools across workload, timetable, and RAG categories
-Memory   : ``ConversationBufferWindowMemory`` — keeps the last ``k`` turns so
-           the agent can handle multi-turn follow-up questions without
-           exceeding Groq's context window.
-
-Public API
-----------
-``get_agent_executor()``
-    Return the singleton ``AgentExecutor``.  Import this in ``main.py`` and
-    the Streamlit ``app.py``.
-
-``run_query(question, session_id)``
-    Convenience wrapper that invokes the agent and returns a structured
-    response dict with the answer, intermediate steps, and metadata.
-
-``reset_memory()``
-    Clear conversation history (call between sessions in the Streamlit app).
-"""
-
 from __future__ import annotations
 
 import logging
@@ -42,17 +14,6 @@ from agent.tools import ALL_TOOLS
 
 logger = logging.getLogger(__name__)
 
-
-# ---------------------------------------------------------------------------
-# System / Agent Prompt
-# ---------------------------------------------------------------------------
-
-# The ReAct prompt must contain the mandatory placeholders:
-#   {tools}           — injected tool descriptions
-#   {tool_names}      — comma-separated tool name list
-#   {input}           — the user's question
-#   {agent_scratchpad} — the Thought/Action/Observation chain
-#   {chat_history}    — injected by ConversationBufferWindowMemory
 
 SYSTEM_PROMPT = """You are FacultyBot, an academic scheduling assistant for University of Calcutta.
 
@@ -95,19 +56,13 @@ Question: {input}
 {agent_scratchpad}"""
 
 # ---------------------------------------------------------------------------
-# Memory (module-level so reset_memory() can clear it)
+# Memory
 # ---------------------------------------------------------------------------
 
 _memory: ConversationBufferWindowMemory | None = None
 
 
 def _get_memory() -> ConversationBufferWindowMemory:
-    """
-    Return (or lazily create) the conversation memory buffer.
-
-    Keeps the last 3 human/AI turns (~6 messages) — enough context for
-    follow-up questions without overflowing Groq's 8 k-token context.
-    """
     global _memory
     if _memory is None:
         _memory = ConversationBufferWindowMemory(
@@ -115,7 +70,7 @@ def _get_memory() -> ConversationBufferWindowMemory:
             memory_key="chat_history",
             input_key="input",
             output_key="output",
-            return_messages=False,   # plain string, not message objects
+            return_messages=False,
         )
     return _memory
 
@@ -123,14 +78,6 @@ def _get_memory() -> ConversationBufferWindowMemory:
 def reset_memory() -> None:
     """
     Clear the conversation history.
-
-    Call this from the Streamlit sidebar's "New Conversation" button or
-    between test runs to start fresh.
-
-    Example
-    -------
-    >>> from agent.agent import reset_memory
-    >>> reset_memory()
     """
     global _memory
     if _memory is not None:
@@ -144,16 +91,6 @@ def reset_memory() -> None:
 
 @lru_cache(maxsize=1)
 def _build_agent_executor() -> AgentExecutor:
-    """
-    Build and return the ``AgentExecutor``.
-
-    This is called once and cached.  The memory object is NOT cached inside
-    the executor because it must be mutable across turns — it is injected
-    via ``_get_memory()`` which returns the module-level singleton.
-
-    Note: ``lru_cache`` caches the executor structure, but memory state
-    lives outside it, so ``reset_memory()`` works correctly.
-    """
     llm = get_llm()
 
     prompt = PromptTemplate.from_template(SYSTEM_PROMPT)
@@ -168,7 +105,7 @@ def _build_agent_executor() -> AgentExecutor:
         agent=react_agent,
         tools=ALL_TOOLS,
         memory=_get_memory(),
-        verbose=True,               # logs Thought/Action/Observation to stdout
+        verbose=True,
         handle_parsing_errors=(
             "Your last response could not be parsed. "
             "If no tool is needed, respond ONLY with:\n"
@@ -176,8 +113,8 @@ def _build_agent_executor() -> AgentExecutor:
             "Final Answer: <your answer>\n"
             "Do not add anything else before 'Thought:'."
         ),
-        max_iterations=5,          # prevent infinite tool-calling loops
-        max_execution_time=120,     # 2-minute hard timeout per query
+        max_iterations=5,
+        max_execution_time=120,
         return_intermediate_steps=True,
         early_stopping_method="generate",
     )
@@ -190,23 +127,6 @@ def _build_agent_executor() -> AgentExecutor:
 
 
 def get_agent_executor() -> AgentExecutor:
-    """
-    Return the singleton ``AgentExecutor``.
-
-    This is the primary entry point for ``main.py`` and ``frontend/app.py``.
-
-    Returns
-    -------
-    AgentExecutor
-        Fully configured agent with all 24 tools and conversation memory.
-
-    Example
-    -------
-    >>> from agent.agent import get_agent_executor
-    >>> executor = get_agent_executor()
-    >>> result = executor.invoke({"input": "What is Prof. Sharma's workload?"})
-    >>> print(result["output"])
-    """
     return _build_agent_executor()
 
 
@@ -215,35 +135,6 @@ def get_agent_executor() -> AgentExecutor:
 # ---------------------------------------------------------------------------
 
 def run_query(question: str, session_id: str = "default") -> dict[str, Any]:
-    """
-    Run a user query through the agent and return a structured response.
-
-    This wrapper adds timing metadata and normalises the output so callers
-    (``main.py``, Streamlit ``app.py``, tests) always get the same shape back.
-
-    Parameters
-    ----------
-    question : str
-        The user's natural-language question.
-    session_id : str
-        Optional identifier for logging — useful when running multiple
-        concurrent Streamlit sessions.  Default ``"default"``.
-
-    Returns
-    -------
-    dict with keys:
-        ``answer``   (str)  — the agent's Final Answer.
-        ``steps``    (list) — intermediate (tool_name, result) pairs.
-        ``duration`` (float)— wall-clock seconds for the full run.
-        ``success``  (bool) — False if an exception was caught.
-        ``error``    (str | None) — exception message if success is False.
-
-    Example
-    -------
-    >>> result = run_query("Which faculty is free on Tuesday at 2 PM?")
-    >>> print(result["answer"])
-    >>> print(f"Answered in {result['duration']:.1f}s")
-    """
     executor = get_agent_executor()
     start = time.perf_counter()
 

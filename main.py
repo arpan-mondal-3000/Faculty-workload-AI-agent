@@ -1,5 +1,5 @@
 """
-main.py  -  Entry point for the Faculty Timetable Agent.
+Entry point for the Faculty Timetable Agent.
 
     python main.py app              # launch Streamlit web app
     python main.py app --port 8502

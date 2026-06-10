@@ -1,5 +1,5 @@
 """
-agent/tools.py  –  LangChain tool definitions for the Faculty Timetable Agent.
+LangChain tool definitions for the Faculty Timetable Agent.
 """
 
 from __future__ import annotations
@@ -57,7 +57,6 @@ def _df_to_str(df, max_rows: int = 15) -> str:
     try:
         return df.head(max_rows).to_markdown(index=False)
     except ImportError:
-        # tabulate not installed — fall back to plain text
         return df.head(max_rows).to_string(index=False)
 
 def _rag_query(retriever, query: str) -> str:
@@ -97,11 +96,9 @@ def get_faculty_workload_report_tool(faculty: str) -> str:
 
 @tool
 def get_department_workload_report_tool(department: str) -> str:
-    """Formatted workload report for a whole department. Input: dept code e.g. 'CSE', 'EEE'."""
-    department = _clean(department)
+    """Formatted workload report for a whole department. Input: dept code e.g. 'EEE'."""
     try:
-        report = get_workload_report("department", department)
-        return f"```\n{report}\n```"
+        return get_workload_report("department", _clean(department))
     except Exception as e:
         return f"Error: {e}"
 

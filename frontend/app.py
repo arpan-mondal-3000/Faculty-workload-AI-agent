@@ -1,6 +1,4 @@
 """
-frontend/app.py
----------------
 Streamlit chat interface for the Faculty Timetable Agent.
 """
 
@@ -28,13 +26,6 @@ st.set_page_config(
     initial_sidebar_state="expanded",
 )
 
-# ---------------------------------------------------------------------------
-# Design tokens
-# ---------------------------------------------------------------------------
-# Palette: deep navy sidebar / warm off-white canvas / amber accent
-# Type: DM Sans (humanist, authority without stiffness) + DM Mono for data
-# Signature: ruled left-border on every assistant reply — a notebook margin
-# ---------------------------------------------------------------------------
 
 st.markdown("""
 <style>

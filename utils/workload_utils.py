@@ -1,6 +1,4 @@
 """
-utils/workload_utils.py
------------------------
 Faculty workload query, analysis, and report-generation utilities for the
 Faculty Timetable Agent.
 

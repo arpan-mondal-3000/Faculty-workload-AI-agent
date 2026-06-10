@@ -1,6 +1,4 @@
 """
-rag/retriever.py
-----------------
 Retrieval interface for the Faculty Timetable Agent.
 
 This module exposes three retrievers — one per ChromaDB collection — plus a
@@ -332,7 +330,7 @@ def get_multi_source_retriever(
 
 
 # ---------------------------------------------------------------------------
-# Utility: similarity search with scores (useful for debugging / evaluation)
+# Utility: similarity search with scores
 # ---------------------------------------------------------------------------
 
 def similarity_search_with_scores(

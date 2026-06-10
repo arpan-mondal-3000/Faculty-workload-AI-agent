@@ -1,6 +1,4 @@
 """
-utils/timetable_utils.py
-------------------------
 Timetable query and analysis utilities for the Faculty Timetable Agent.
 
 All functions operate on the normalised timetable DataFrame returned by

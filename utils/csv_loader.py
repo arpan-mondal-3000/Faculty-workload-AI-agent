@@ -1,6 +1,4 @@
 """
-utils/csv_loader.py
--------------------
 Centralised, cached CSV loading utilities for the Faculty Timetable Agent.
 
 Responsibilities
